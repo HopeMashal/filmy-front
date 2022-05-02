@@ -19,7 +19,7 @@ export default function ForgetPassword() {
         }
         await BackEndAPI.post("/users/forgotPassword" , userInf); 
         const box=document.querySelector('.forgetRight');
-        box.innerHTML=`<div class='forgetBox' style='text-align: center;'><h1>${t('check-email')}</h1></div>`
+        box.innerHTML=`<div class='forgetBox' style='text-align: center;'><h3>${t('check-email')}</h3></div>`
       } catch (e){
         console.log(e)
       }
